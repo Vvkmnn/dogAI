@@ -4,29 +4,29 @@
 
 Another [AIND](https://www.udacity.com/course/artificial-intelligence-nanodegree--nd889) project, in which we will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.
 
-## Goal:
+## Goal
 Primarly: **Given an image of a dog, your algorithm will identify an estimate of the canine’s breed. If supplied an image of a human, the code will identify the resembling dog breed**. 
 
-This model uses **Convolutional Neural Networks**, implemented via [**Keras**](https://keras.io/) and [**TensorFlow**](https://www.tensorflow.org/). It was originally put together by the awesome dudes at [Udacity](https://github.com/udacity/dog-project), I just completed certain bits. 
+This model uses **Convolutional Neural Networks**, **Haar Cascades**, and **Transfer Learning**, as implemented via [**Keras**](https://keras.io/) and [**TensorFlow**](https://www.tensorflow.org/). It was originally put together by the awesome dudes at [Udacity](https://github.com/udacity/dog-project), I just completed certain bits. 
 
 
 ## Setup
 
-	For __Mac/OSX__:
+#### macOS:
 	```
 		conda env create -f requirements/aind-dog-mac.yml
 		source activate aind-dog
 		KERAS_BACKEND=tensorflow python -c "from keras import backend"
 	```
 
-	For __Linux__:
+#### Linux:
 	```
 		conda env create -f requirements/aind-dog-linux.yml
 		source activate aind-dog
 		KERAS_BACKEND=tensorflow python -c "from keras import backend"
 	```
 
-	For __Windows__:
+#### Windows:
 	```
 		conda env create -f requirements/aind-dog-windows.yml
 		activate aind-dog
